@@ -11,7 +11,7 @@ const Card = (props) => {
       <Link to={`/product/${props.id}`}>
         <img className="image" src={props.images} alt="" />
       </Link>
-      <p>{props.title}</p>
+      <h2>{props.title}</h2>
       <div className="card-prices">
         <p className="price"> $ {props.price}</p>
       </div>

@@ -3,11 +3,15 @@ import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 
 function Header({ cart }) {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="header-container">
         <div>
-          <NavLink to="/">
+          <NavLink onClick={scrollToTop} to="/">
             <img
               id="logo"
               src="https://assets.bigcartel.com/theme_images/60399594/TOENAE_text_logo.png?auto=format&fit=max&h=400&w=1068"
@@ -16,11 +20,17 @@ function Header({ cart }) {
           </NavLink>
         </div>
         <nav className="navbar">
-          <NavLink to="/" activeClassName="active" className={"navbar-link"}>
+          <NavLink
+            onClick={scrollToTop}
+            to="/"
+            activeClassName="active"
+            className={"navbar-link"}
+          >
             HOME
             {/* Home {isOpen === "Home" ? <hr /> : <></>} */}
           </NavLink>
           <NavLink
+            onClick={scrollToTop}
             activeClassName="active"
             className={"navbar-link"}
             to="hoodies"
@@ -29,6 +39,7 @@ function Header({ cart }) {
             {/* {isOpen === "hoodies" ? <hr /> : <></>} */}
           </NavLink>
           <NavLink
+            onClick={scrollToTop}
             activeClassName="active"
             className={"navbar-link"}
             to="t-shirt"
@@ -37,6 +48,7 @@ function Header({ cart }) {
             {/* {isOpen === "t-shirt" ? <hr /> : <></>} */}
           </NavLink>
           <NavLink
+            onClick={scrollToTop}
             activeClassName="active"
             className={"navbar-link"}
             to="pants"
@@ -45,6 +57,7 @@ function Header({ cart }) {
             {/* {isOpen === "pants" ? <hr /> : <></>} */}
           </NavLink>
           <NavLink
+            onClick={scrollToTop}
             activeClassName="active"
             className={"navbar-link"}
             to="jackets"
@@ -53,6 +66,7 @@ function Header({ cart }) {
             {/* {isOpen === "jackets" ? <hr /> : <></>} */}
           </NavLink>
           <NavLink
+            onClick={scrollToTop}
             activeClassName="active"
             className={"navbar-link"}
             to="shoes"
@@ -62,7 +76,7 @@ function Header({ cart }) {
           </NavLink>
         </nav>
 
-        <Link to="cart" cart={cart}>
+        <Link onClick={scrollToTop} to="cart" cart={cart}>
           <img
             alt=""
             id="cart"

@@ -60,7 +60,7 @@
 
     
     .header-container{
-      font-size: 10px;
+      
       width: auto;
     }
     #logo{
@@ -70,7 +70,7 @@
       gap: 4px;
     }
     .navbar-link{
-      font-size: 10px;
+      font-size: 15px;
       font-weight: 700;
       text-transform: uppercase;
     }

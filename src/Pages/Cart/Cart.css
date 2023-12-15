@@ -16,6 +16,8 @@
 }
 
 .checkout{
+    flex-direction: column;
+    display: flex;
     background-color: rgb(223, 252, 252);
     padding: 50px 50px;
     margin: 100px 50px;

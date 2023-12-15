@@ -6,6 +6,10 @@
     padding: 30px 20px;
     align-items: center;
     box-shadow: 4px 0  10px rgba(205, 205, 205, 0.293);
+    color:rgb(20, 20, 20);
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
 }
 .card p{
     margin: 6px 0px;
@@ -19,11 +23,7 @@
     gap: 20px;
     opacity: 60%;
 }
-.card{
-    color:rgb(25, 9, 9);
-    font-size: 18px;
-    font-weight: 600;
-}
+
 .card:hover,  .card p:hover{
     transform: scale(1.05);
     transition: 0.6s;
@@ -49,8 +49,8 @@
         gap: 0;
     }
    .card{
-        max-height: 240px;
-        max-width: 160px;
+        
+        max-width: 240px;
         font-size: 10px;
     }
     .price{
@@ -60,6 +60,10 @@
     .image{
         max-height: 200px;
         max-width: 160px;       
+    }
+    .card h2{
+        margin-top: 40px;
+        text-transform: uppercase;
     }
    
   }
