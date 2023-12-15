@@ -22,15 +22,6 @@ function Header({ cart }) {
         <nav className="navbar">
           <NavLink
             onClick={scrollToTop}
-            to="/"
-            activeClassName="active"
-            className={"navbar-link"}
-          >
-            HOME
-            {/* Home {isOpen === "Home" ? <hr /> : <></>} */}
-          </NavLink>
-          <NavLink
-            onClick={scrollToTop}
             activeClassName="active"
             className={"navbar-link"}
             to="hoodies"

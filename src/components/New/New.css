@@ -31,15 +31,15 @@ hr{
 }
 
 @media only screen 
-  and (min-device-width: 375px) 
+  and (min-device-width: 350px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
      
     .new{
-       
+        
+        display: flex;
         gap: 5px;
         height: 400px;
-        
         overflow: scroll;
      
     }
