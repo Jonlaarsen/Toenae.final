@@ -1,0 +1,29 @@
+.logo {
+    font-size: 3px;
+    text-align: center;
+}
+
+    .new-herocontainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: blueviolet;
+        height: 100vh;
+        font-size: 50px;
+      }
+
+
+    @media only screen 
+      and (min-device-width: 375px) 
+      and (max-device-width: 812px) 
+      and (-webkit-min-device-pixel-ratio: 3) { 
+        .new-herocontainer{
+            height: 400px;
+            width: 100%;
+        }
+        .new-herocontainer img{
+            height: 100px;
+            width: auto;
+            margin: 0;
+        }
+      }

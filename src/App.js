@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import { ShopContextProvider } from "./Context/ShopContext";
+import Header from "./components/Header/Header";
+import SingelProductPage from "./Pages/SingelProduct/SingelProduct";
+import Home from "./Pages/Home/Home";
+import ShopCategory from "./Pages/ShopCategory/ShopCategory";
+import Cart from "./Pages/Cart/Cart";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ShopContextProvider>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="product" element={<SingelProductPage />}>
+            <Route path=":productId" element={<SingelProductPage />} />
+          </Route>
+          <Route path="shoes" element={<ShopCategory category="shoes" />} />
+          <Route path="t-shirt" element={<ShopCategory category="t-shirt" />} />
+          <Route path="hoodies" element={<ShopCategory category="hoodies" />} />
+          <Route path="pants" element={<ShopCategory category="pants" />} />
+          <Route path="jackets" element={<ShopCategory category="jackets" />} />
+
+          <Route path="cart" element={<Cart />} />
+        </Routes>
+        <Footer />
+      </ShopContextProvider>
     </div>
   );
 }

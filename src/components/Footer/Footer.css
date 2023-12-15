@@ -1,0 +1,24 @@
+.bottom-logo{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(137, 43, 226, 0.646);
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+    
+}
+
+.bottom-logo img{
+    height: 15rem;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .bottom-logo img{
+        height: 5rem;
+    }
+  }
