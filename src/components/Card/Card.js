@@ -3,8 +3,11 @@ import "./Card.css";
 import { Link } from "react-router-dom";
 
 const Card = (props) => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
   return (
-    <div className="card">
+    <div onClick={scrollToTop} className="card">
       <Link to={`/product/${props.id}`}>
         <img className="image" src={props.images} alt="" />
       </Link>
