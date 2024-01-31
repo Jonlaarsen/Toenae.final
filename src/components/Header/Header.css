@@ -6,8 +6,8 @@
     position: sticky;
     top: 0;
     width: 98%;
-    background-color: white;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.495);
+    background-color: rgba(255, 255, 255, 0.483);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.495); */
     
     padding: 0 20px 0 20px;
     z-index: 1;
@@ -18,8 +18,9 @@
   }
   .navbar-link {
     align-self: center;
-    font-size: 2rem;
+    font-size: 16px;
     font-weight: 800;
+    
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -33,24 +34,14 @@
     height: 3rem;
   }
   #logo {
-    height: 6rem;
+    height: 7rem;
   }
   #cart{
     height: 6rem;
   }
-  /* .tab {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-  } */
-  hr {
-    height: 5px;
-    margin-top: 0;
-    color: rgb(0, 0, 0);
   
-  }
   .active {
-    color: green;
+    color: rgb(139, 10, 159);
 }
 
   @media only screen 
@@ -60,8 +51,7 @@
 
     
     .header-container{
-      
-      width: auto;
+      width: 92%;
     }
     #logo{
       max-height: 50px;
@@ -70,7 +60,7 @@
       gap: 4px;
     }
     .navbar-link{
-      font-size: 15px;
+      font-size: 10px;
       font-weight: 700;
       text-transform: uppercase;
     }

@@ -1,3 +1,6 @@
+a{
+    text-decoration: none;
+}
 .shop-category{
     margin-top: 100px;
     display: flex;
@@ -7,15 +10,20 @@
     flex-direction: column;
 }
 .category-items{
+    justify-content: center;
     padding-top: 70px;
     padding-bottom: 70px;
-    width: 850px;
+    width: 1400px;
     height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
+
     
+}
+h1{
+    text-transform: uppercase;
 }
 @media only screen 
   and (min-device-width: 350px) 

@@ -3,6 +3,7 @@ import "./ShopCategory.css";
 
 import Card from "../../components/Card/Card";
 import AllProducts from "../../Data/AllProducts";
+import { Link } from "react-router-dom";
 
 const ShopCategory = (props) => {
   //   const { Allproducts } = useContext(ShopContext);
@@ -15,13 +16,14 @@ const ShopCategory = (props) => {
         {AllProducts.map((product, i) => {
           if (props.category === product.category) {
             return (
-              <Card
-                key={i}
-                id={product.id}
-                title={product.title}
-                images={product.images}
-                price={product.price}
-              />
+              <a href={product.link}>
+                <Card
+                  key={i}
+                  id={product.id}
+                  title={product.title}
+                  images={product.images}
+                />
+              </a>
             );
           } else {
             return null;

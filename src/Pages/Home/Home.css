@@ -11,7 +11,7 @@
   margin: 0;
 }
 .product-display h1{
-  font-size: 45px;
+  font-size: 16px;
   margin-bottom: 50px;
   color: rgba(137, 43, 226, 0.646);
 }
@@ -20,7 +20,8 @@
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-    .bottom-logo{
-        display: none;
+    .product-display h1{
+      font-size: 10px;
+      font-weight: 300;
     }
   }

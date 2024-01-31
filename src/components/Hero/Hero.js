@@ -13,16 +13,18 @@ import {
   ZoomIn,
   StickyIn,
   StickyOut,
+  Fade,
 } from "react-scroll-motion";
 
 const Hero = () => {
   const ZoomInScrollOut = batch(
-    FadeIn(0, 0, 10, 50, 80, 100, 100),
+    FadeIn(0, 0, 0, 10, 40, 60, 80, 100),
     Sticky(),
-    ZoomOut(3, 25)
+    ZoomOut(3, 25),
+    FadeOut(2, 0)
   );
 
-  const HeroScroll = batch(Sticky(), ZoomOut(5, 18));
+  const HeroScroll = batch(Sticky(), ZoomOut(5, 18), FadeOut(2, 0));
 
   return (
     <div>
@@ -47,7 +49,7 @@ const Hero = () => {
                 title="Image from freeiconspng.com"
               >
                 <img
-                  src="https://www.freeiconspng.com/uploads/blank-t-shirt-png-21.png"
+                  src="https://images.squarespace-cdn.com/content/v1/581499b8e58c627afce6221c/1581466535600-K13XTW44G4XOOC0RFPN5/winky.gif?format=500w"
                   width="50"
                   alt="Free Download Of Blank T Shirt Icon Clipart"
                 />
@@ -63,7 +65,7 @@ const Hero = () => {
                 title="Image from freeiconspng.com"
               >
                 <img
-                  src="https://www.freeiconspng.com/uploads/blank-t-shirt-png-21.png"
+                  src="https://images.squarespace-cdn.com/content/v1/581499b8e58c627afce6221c/1581466535600-K13XTW44G4XOOC0RFPN5/winky.gif?format=500w"
                   width="50"
                   alt="Free Download Of Blank T Shirt Icon Clipart"
                 />
@@ -79,7 +81,7 @@ const Hero = () => {
                 title="Image from freeiconspng.com"
               >
                 <img
-                  src="https://www.freeiconspng.com/uploads/blank-t-shirt-png-21.png"
+                  src="https://images.squarespace-cdn.com/content/v1/581499b8e58c627afce6221c/1581466535600-K13XTW44G4XOOC0RFPN5/winky.gif?format=500w"
                   width="50"
                   alt="Free Download Of Blank T Shirt Icon Clipart"
                 />
@@ -95,7 +97,7 @@ const Hero = () => {
                 title="Image from freeiconspng.com"
               >
                 <img
-                  src="https://www.freeiconspng.com/uploads/blank-t-shirt-png-21.png"
+                  src="https://images.squarespace-cdn.com/content/v1/581499b8e58c627afce6221c/1581466535600-K13XTW44G4XOOC0RFPN5/winky.gif?format=500w"
                   width="50"
                   alt="Free Download Of Blank T Shirt Icon Clipart"
                 />
@@ -106,7 +108,7 @@ const Hero = () => {
 
         <ScrollPage></ScrollPage>
       </ScrollContainer>
-      <div className="new-herocontainer">
+      {/* <div className="new-herocontainer">
         <h1>NEW SHIT</h1>
         <a
           href="https://www.freeiconspng.com/img/30268"
@@ -119,7 +121,7 @@ const Hero = () => {
           />
         </a>
         <h1>BUY IT CUNT</h1>
-      </div>
+      </div> */}
     </div>
   );
 };

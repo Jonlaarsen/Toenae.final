@@ -1,6 +1,6 @@
 .cart-container{
     display: flex;
-    margin-top: 200px;
+    margin-top: 50px;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -18,7 +18,7 @@
 .checkout{
     flex-direction: column;
     display: flex;
-    background-color: rgb(223, 252, 252);
+    background-color: rgba(223, 252, 252, 0.612);
     padding: 50px 50px;
     margin: 100px 50px;
     gap: 20px;

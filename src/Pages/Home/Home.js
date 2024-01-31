@@ -11,8 +11,8 @@ const Home = () => {
     <div className="display">
       <Hero />
       <div className="product-display">
-        <h1>NEW</h1>
-        <New />
+        {/* <h1>NEW</h1>
+        <New /> */}
         <All />
       </div>
     </div>

@@ -2,26 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Oswald&family=VT323&display=swap');
 
 body{
-font-family: 'Dhurjati', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'VT323', monospace;
+font-family: Arial Black, "Arial Bold", "Arial-BoldMT", Gadget, sans-serif;
 margin: 0;
 padding: 0;
+font-size: 16px;
 
 }
 
-.checkout-btn {
-    color: white;
-    background-color: rgb(155, 86, 220);
-    padding: 10px 5px;
-    border: none;
-    cursor: pointer;
-    font-weight: 700;
-}
-.continue-btn {
-    color: white;
-    background-color: rgb(187, 86, 220);
-    padding: 10px 5px;
-    border: none;
-    cursor: pointer;
-}

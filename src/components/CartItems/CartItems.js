@@ -7,9 +7,7 @@ const CartItems = (props) => {
   console.log(props.data);
   console.log(product);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  };
+  
 
   const { cartItems, addToCart, removeFromCart } = useContext(ShopContext);
 

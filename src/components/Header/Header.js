@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 
@@ -24,36 +24,28 @@ function Header({ cart }) {
             onClick={scrollToTop}
             activeClassName="active"
             className={"navbar-link"}
-            to="hoodies"
+            to="tops"
           >
-            Hoodies
+            TOPS
             {/* {isOpen === "hoodies" ? <hr /> : <></>} */}
           </NavLink>
+
           <NavLink
             onClick={scrollToTop}
             activeClassName="active"
             className={"navbar-link"}
-            to="t-shirt"
+            to="BOTTOMS"
           >
-            T-shirt
-            {/* {isOpen === "t-shirt" ? <hr /> : <></>} */}
-          </NavLink>
-          <NavLink
-            onClick={scrollToTop}
-            activeClassName="active"
-            className={"navbar-link"}
-            to="pants"
-          >
-            Pants
+            BOTTOMS
             {/* {isOpen === "pants" ? <hr /> : <></>} */}
           </NavLink>
           <NavLink
             onClick={scrollToTop}
             activeClassName="active"
             className={"navbar-link"}
-            to="jackets"
+            to="OUTER"
           >
-            jackets
+            OUTER
             {/* {isOpen === "jackets" ? <hr /> : <></>} */}
           </NavLink>
           <NavLink
@@ -65,9 +57,22 @@ function Header({ cart }) {
             shoes
             {/* {isOpen === "shoes" ? <hr /> : <></>} */}
           </NavLink>
+          <NavLink
+            onClick={scrollToTop}
+            activeClassName="active"
+            className={"navbar-link"}
+            to="accesory"
+          >
+            accesory
+            {/* {isOpen === "t-shirt" ? <hr /> : <></>} */}
+          </NavLink>
         </nav>
 
-        <Link onClick={scrollToTop} to="cart" cart={cart}>
+        <Link
+          onClick={scrollToTop}
+          to="https://www.toenae.world/cart"
+          cart={cart}
+        >
           <img
             alt=""
             id="cart"

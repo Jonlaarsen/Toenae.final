@@ -29,7 +29,7 @@ const ProductDisplay = (props) => {
           <h1>SELECT SIZE</h1>
           <div className="sizes">
             <label for="size">Choose a size:</label>
-            <select id="size" name="size">
+            <select required id="size" name="size">
               <option value="x-small">XS</option>
               <option value="small">S</option>
               <option value="medium">M</option>

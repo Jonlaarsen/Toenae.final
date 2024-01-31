@@ -10,6 +10,10 @@ const Cart = () => {
   const { cartItems, getTotalCartAmount } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   const navigate = useNavigate();
   return (
     <div className="cart-container">
@@ -26,7 +30,10 @@ const Cart = () => {
           <p>
             subtotal: $ <span>{totalAmount}</span>
           </p>
-          <button onClick={() => navigate("/")} className="continue-btn">
+          <button
+            onClick={() => navigate("/") && scrollToTop()}
+            className="continue-btn"
+          >
             Continue Shopping
           </button>
           <button className="checkout-btn">Checkout</button>
