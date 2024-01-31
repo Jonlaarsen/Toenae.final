@@ -2,28 +2,28 @@ const AllProducts = [
   // ------- SHOES ----------
   {
     title: "TOENAE TROTTERS: black",
-    link: "https://www.toenae.world/product/toenae-trotters-black",
+    link: "https://www.toenae.world/product/toenae-trotter-black",
     category: "shoes",
     images:
       "https://assets.bigcartel.com/product_images/99b4f567-52ec-4ebf-89a8-84bd9f62c86c/toenae-trotter-black.jpg?auto=format&fit=max&w=650",
   },
   {
     title: "TOENAE TROTTERS: white",
-    link: "https://www.toenae.world/product/toenae-trotters-white",
+    link: "https://www.toenae.world/product/toenae-trotter-white",
     category: "shoes",
     images:
       "https://assets.bigcartel.com/product_images/544e2503-2cf1-4c39-9209-1be9397b210a/toenae-trotter-white.jpg?auto=format&fit=max&w=650",
   },
   {
     title: "TOENAE TROTTERS: blue",
-    link: "https://www.toenae.world/product/toenae-trotters-blue",
+    link: "https://www.toenae.world/product/toenae-trotters",
     category: "shoes",
     images:
       "https://assets.bigcartel.com/product_images/5e6b314a-4c37-433a-b384-feae406fe771/toenae-trotters.jpg?auto=format&fit=max&w=650",
   },
   {
     title: "TOENAE TROTTERS: pink",
-    link: "https://www.toenae.world/product/toenae-trotters-pink",
+    link: "https://www.toenae.world/product/toenae-trotter-pink",
     category: "shoes",
     images:
       "https://assets.bigcartel.com/product_images/64bd2d4f-4ec6-4777-9ebf-172b43d8c8a6/toenae-trotter-pink.jpg?auto=format&fit=max&w=650",
