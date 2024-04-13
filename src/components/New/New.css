@@ -1,59 +1,51 @@
-.new{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    
-    height: 500px;
-    width: 100%;
-   
-    
- 
-}
-.new h1{
-    color: rgba(0, 0, 0, 0.883);
-    font-weight: 800;
-    font-size: 16px;
-}
-.new-items{
-    margin-top: 10px;
-    display: flex;
-    gap: 30px;
-    height: 40px;
-    
-}
-hr{
-    background: black;
-    height: 1px;
-    width: 100%;
-    margin-bottom: 40px;
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
-@media only screen 
-  and (min-device-width: 350px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-     
-    .new{
-        
-        display: flex;
-        gap: 5px;
-        height: 400px;
-        overflow: scroll;
-     
-    }
-    .new h1{
-        font-size: 20px;
-    }
-    .new-items{
-        margin-top: 10px;
-        display: flex;
-        gap: 10px;
-        height: 40px;
-        
-    }
-    hr{
-        display: none;
-    }
-  }
+.logos {
+  overflow: hidden;
+ 
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 150px;
+  margin: 0 40px;
+}

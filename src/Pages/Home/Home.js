@@ -15,6 +15,7 @@ const Home = () => {
         <New /> */}
         <All />
       </div>
+      <New />
     </div>
   );
 };
